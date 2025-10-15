@@ -12,3 +12,4 @@ public class Application {
         System.out.println("결과 : " + result);
     }
 }
+//예: "" => 0, "1,2" => 3, "1,2,3" => 6, "1,2:3" => 6

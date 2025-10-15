@@ -11,9 +11,11 @@ public class Cal {
             if(c==','||c==':'){
                 ret+=temp;
                 temp=0;
-            }else{
+            }else if(Character.isDigit(c)){
                 //temp = Integer.parseInt(c);
                 temp = c-'0';
+            }else{
+                throw new IllegalArgumentException("잘못된 값을 입력하셨습니다.");
             }
         }
         if(temp!=0) ret+=temp;
