@@ -16,7 +16,10 @@ public class Cal {
                 temp = 0;
             } else if (Character.isDigit(c)) {
                 temp = temp * 10 + (c - '0'); // 여러 자리 숫자도 처리 가능
+            } else {
+                throw new IllegalArgumentException("잘못된 값을 입력하셨습니다.");
             }
+
         }
         ret += temp;
     }
