@@ -39,5 +39,5 @@ public class Cal {
 
     public int getRet() {
         return ret;
-    }// 이게 필요한가?
+    }
 }
